@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIMYOUNGJU_PORTFOLIO</title>
+    <meta name="robots" content="All">
+    <meta name="Yeti" content="index, follow">
+    <meta name="Yeti" content="All">
+    <meta name="googlebot" content="All">
+    <meta name="googlebot" content="index, follow">
+    <meta name="daum" content="All">
+    <meta name="daum" content="index, follow">
+    <meta name="title" content="UXUI디자이너 - 김영주 포트폴리오">
+    <meta name="description" content="UXUI디자이너 김영주입니다. 포트폴리오 방문을 환영">
+    <meta name="keywords" content="웹디자이너, 웹퍼블리셔, UXUI 디자이너">
+    <meta name="author" content="김영주">
+    <meta name="content-language" content="kr">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="KIMYOUNGJU_PORTFOLIO">
+    <meta property="og:title" content="KIMYOUNGJU_PORTFOLIO">
+    <meta property="og:description" content="김영주 포트폴리오">
+    <meta property="og:image" content="images/img.PNG">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <style>
+        @font-face {
+            font-family: 'Helvetica';
+            src: url(../helvetica-neue/HelveticaNeueMedium.otf);
+        }
+
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container" class="white-on-dark">
+            <h1>
+                <button>
+                    <img class="white-on-dark" src="images/header/45.png" alt="">
+                </button>
+            </h1>
+            <!-- 햄버거 버튼 -->
+            <button class="menu-toggle" class="white-on-dark" aria-label="Toggle menu">
+                <img class="white-on-dark" src="images/header/menu.png" alt="Menu icon">
+            </button>
+            <!-- 기본메뉴 -->
+            <nav>
+                <ul>
+                    <li><button data-animation-scroll="true" data-target="#profile">PROFILE</button></li>
+                    <li><button data-animation-scroll="true" data-target="#web">WEB</button></li>
+                    <li><button data-animation-scroll="true" data-target="#app">APP</button></li>
+                    <li><button data-animation-scroll="true" data-target="#branding">BRANDING</button></li>
+                    <li><button data-animation-scroll="true" data-target="#detail">DETAILPAGE</button></li>
+                    <li><button data-animation-scroll="true" data-target="#cardnews">CARD NEWS</button></li>
+                    <li><button data-animation-scroll="true" data-target="#edit">EDIT</button></li>
+                </ul>
+            </nav>
+            <div class="onoff" onclick="toggleDarkMode()">
+                <img class="img-on" src="images/header/ON.png" alt="ON">
+                <img class="img-off" src="images/header/OFF.png" alt="OFF">
+            </div>
+        </div>
+        <!-- 검은 배경 오버레이, 여기 메뉴 복사 말고 CSS/JS로 기존 ul을 오버레이에 띄움 -->
+        <div class="mobile-menu-overlay" id="mobileMenu">
+            <!-- JS로 기존 nav > ul 복제하거나 display 처리할 예정 -->
+        </div>
+    </header>
+    <main>
+        <section class="container main1">
+            <div class="main1dummy">
+                <div class="maintitle main1title">
+                    I DESIGN, <br>
+                    CODE,<br>
+                    CREATE
+                </div>
+                <div class="main1cover">
+                    <div class="maincover1">
+                        <img class="star1" src="images/main1/cover1.png" alt="">
+                        <img class="white-on-dark star2 " data-aos="fade-down" data-aos-delay="200"
+                            src="images/main1/& CODING PORTFOLIO.png" alt="">
+                        <img class="white-on-dark star3" data-aos="fade-down" data-aos-delay="300"
+                            src="images/main1/WEB DESIGN.png" alt="">
+                        <img class="white-on-dark star4" data-aos="fade-down" data-aos-delay="350"
+                            src="images/main1/2025.png" alt="">
+                    </div>
+                    <div class="youngju">
+                        <img src="images/main1/youngju/y.png" data-aos="zoom-in" data-aos-delay="500" alt="">
+                        <img src="images/main1/youngju/o.png" data-aos="zoom-in" data-aos-delay="550" alt="">
+                        <img src="images/main1/youngju/u.png" data-aos="zoom-in" data-aos-delay="600" alt="">
+                        <img src="images/main1/youngju/n.png" data-aos="zoom-in" data-aos-delay="650" alt="">
+                        <img src="images/main1/youngju/g.png" data-aos="zoom-in" data-aos-delay="700" alt="">
+                        <img src="images/main1/youngju/j.png" data-aos="zoom-in" data-aos-delay="750" alt="">
+                        <img src="images/main1/youngju/u1.png" data-aos="zoom-in" data-aos-delay="800" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container main2">
+            <div class="main2dummy" data-aos="fade-up" data-aos-delay="300">
+                <h4>KIM YOUNG JU</h4>
+                <span>저는 <strong>사용자 경험을 설계</strong>하는 디자이너 <strong>김영주</strong>입니다. <br> </span>
+                <span>브랜드의 아이덴티티를 명확히 드러내면서, </span> <br>
+                <span> 몰입할 수 있는 경험을 만드는 것을 목표로 합니다. </span> <br>
+                <span>작은 디테일을 놓치지 않는 <strong>꼼꼼함</strong>과 </span> <br>
+                <span> <strong>새로운 시도</strong>를 두려워하지 않는 태도로, </span> <br>
+                <span> 프로젝트 속에서 늘 배우고 <strong>성장</strong>하고 있습니다.</span>
+                <img class="main2img main2img1" data-aos="zoom-out-up" data-aos-delay="400" id="aostarget"
+                    src="images/main2/1.png" alt="">
+                <img class="main2img main2img2" data-aos="zoom-out-up" data-aos-delay="500" data-aos-anchor="#aostarget"
+                    src="images/main2/2.png" alt="">
+                <img class="main2img main2img3" data-aos="zoom-out-up" data-aos-delay="600" data-aos-anchor="#aostarget"
+                    src="images/main2/3.png" alt="">
+            </div>
+        </section>
+        <!-- textbanner -->
+        <section class="textbanner">
+            <div class="textslide">
+                <div class="bannertext">DESIGN & CODING PORTFOLIO KIM YOUNG JU
+                    <img src="images/main2/45.png" alt="">
+                    DESIGN & CODING PORTFOLIO KIM YOUNG JU
+                    <img src="images/main2/45.png" alt="">
+                </div>
+                <div class="bannertext">DESIGN & CODING PORTFOLIO KIM YOUNG JU
+                    <img src="images/main2/45.png" alt="">
+                    DESIGN & CODING PORTFOLIO KIM YOUNG JU
+                    <img src="images/main2/45.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="container main3" id="profile" data-aos="fade-up">
+
+            <div class="maintitle">
+                PROFILE
+            </div>
+            <div class="main3dummy">
+                <div class="profileimg">
+                    <img src="images/main3/me.png" alt="">
+                    <img data-aos="zoom-in" data-aos-delay="200" src="images/main3/2025.png" alt="">
+                    <img data-aos="zoom-in" data-aos-delay="300" src="images/main3/designer.png" alt="">
+                    <img data-aos="zoom-in" data-aos-delay="300" src="images/main3/star.png" alt="">
+                </div>
+                <div class="profiletext">
+                    <div class="p-left">
+                        <div class="skill">
+                            <h6> 김영주 KIM YOUNG JU</h6>
+                            <p>2004. 01. 12</p>
+                            <p>010 4232 6737</p>
+                            <p>kyoungju0112@naver.com</p>
+                        </div>
+                        <div class="skill">
+                            <h6> EXPERIENCE</h6>
+                            <p>2024 (주)오가닉위드 디자인 근로</p>
+                            <p>2024 대구가톨릭대학교 홍보물 제작</p>
+                            <p>2024 통아트 미술체험보조 및 설치보조</p>
+                            <p>2025 도리아트 미술학원 보조</p>
+                            <p>2025 모리스 캐릭터 공모전 은상 수상</p>
+                            <p>2025 구름톤 유니브 4기</p>
+                        </div>
+                    </div>
+                    <div class="p-right">
+                        <div class="skill">
+                            <h6> EDUCATION</h6>
+                            <p>2022 구미 선주고등학교 졸업</p>
+                            <p>2022 대구가톨릭대학교 입학</p>
+                            <p>그린컴퓨터 대구학원 <br>
+                                <span>UXUI 반응형 웹디자인&웹 퍼블리셔 양성과정</span>
+                            </p>
+                        </div>
+                        <div class="skill">
+                            <h6> SKILL</h6>
+                            <div class="skillicon"class="white-on-dark">
+                                <img src="images/main3/1.png" alt="">
+                                <img src="images/main3/2.png" alt="">
+                                <img src="images/main3/3.png" alt="">
+                                <img src="images/main3/4.png" alt="">
+                                <img src="images/main3/5.png" alt="">
+                                <img src="images/main3/6.png" alt="">
+                                <img src="images/main3/7.png" alt="">
+                                <img src="images/main3/8.png" alt="">
+                                <img src="images/main3/9.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container main4" id="web" data-aos="fade-up">
+            <div class="main4dummy">
+                <div class="main4title">
+                    <div class="webbutton" >
+                        <div class="white-on-dark">WEB</div>
+                        <div>DESIGN</div>
+                        <div>CODING</div>
+                    </div>
+                    <div class="maintitle">WEB</div>
+                </div>
+                <!-- 프로젝트 -->
+                <div class="webprojectdummy">
+                    <div class="webdummy">
+                        <div class="webproject webproject1">
+                            <a href="https://youngju0112.github.io/melon/" target="_blank">
+                                <img src="images/main4/icon.png" alt="">
+                            </a>
+                        </div>
+                        <div class="projecttitle">
+                            <p>멜론 MELON</p>
+                            <span>[리디자인 & 퍼블리싱]</span>
+                        </div>
+                        <div class="webmemo">
+                            MELON Web Redesign
+                        </div>
+                        <div class="projectbutton">
+                            <button><a href="https://youngju0112.github.io/melon/" target="_blank">리디자인</a></button>
+                            <button><a
+                                    href="https://www.figma.com/proto/PSYKEIzSEFjcCkO1z7eWww/%EB%A9%9C%EB%A1%A0-%EC%9B%B9%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?node-id=940-283&t=VDfIHcTZ2BnRr3to-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=408%3A3557s"
+                                    target="_blank">프로세스</a></button>
+                            <button><a href="https://www.melon.com/" target="_blank">기존</a></button>
+                        </div>
+                    </div>
+                    <div class="webdummy">
+                        <div class="webproject webproject2">
+                            <a href="https://youngju0112.github.io/IPSAGUI/" target="_blank">
+                                <img src="images/main4/icon.png" alt="">
+                            </a>
+                        </div>
+                        <div class="projecttitle">
+                            <p>잎사귀 IPSAGUI</p>
+                            <span>[리디자인 & 퍼블리싱]</span>
+                        </div>
+                        <div class="webmemo">
+                            IPSAGUI Web Redesign
+                        </div>
+                        <div class="projectbutton">
+                            <button><a href="https://youngju0112.github.io/IPSAGUI/" target="_blank">리디자인</a></button>
+                            <button><a
+                                    href="https://www.figma.com/proto/L3kGxnZwr7GAZEhOQSjDyT/1%EC%A1%B0-%EC%9E%8E%EC%82%AC%EA%B7%80?node-id=339-462&t=7ePjKeNnU8Kw79r6-1&scaling=min-zoom&content-scaling=fixed&page-id=34%3A2"
+                                    target="_blank">프로세스</a></button>
+                        </div>
+                    </div>
+                    <div class="webdummy">
+                        <div class="webproject webproject3">
+                            <a href="https://youngju0112.github.io/DDP/" target="_blank">
+                                <img src="images/main4/icon.png" alt="">
+                            </a>
+                        </div>
+                        <div class="projecttitle">
+                            <p>디디피 DDP</p>
+                            <span>[리디자인 & 퍼블리싱]</span>
+                        </div>
+                        <div class="webmemo">
+                            DDP Web Redesign
+                        </div>
+                        <div class="projectbutton">
+                            <button><a href="https://youngju0112.github.io/DDP/" target="_blank">리디자인</a></button>
+                            <button><a href="https://ddp.or.kr/?menuno=228" target="_blank">기존</a></button>
+                        </div>
+                    </div>
+                    <div class="webdummy">
+                        <div class="webproject webproject4">
+                            <a href="https://www.figma.com/proto/7cmv5rAeugqmKBOO67zQQC/Aeiou?node-id=142-2375&t=SIfA2KGgjCa7wBtV-1&scaling=min-zoom&content-scaling=fixed&page-id=28%3A118&starting-point-node-id=142%3A2375"
+                                target="_blank">
+                                <img src="images/main4/icon.png" alt="">
+                            </a>
+                        </div>
+                        <div class="projecttitle">
+                            <p>아에이오우 AEIOU</p>
+                            <span>[리디자인]</span>
+                        </div>
+                        <div class="webmemo">
+                            AEIOU Web Redesign
+                        </div>
+                        <div class="projectbutton">
+                            <button><a
+                                    href="https://www.figma.com/proto/7cmv5rAeugqmKBOO67zQQC/Aeiou?node-id=142-2375&t=SIfA2KGgjCa7wBtV-1&scaling=min-zoom&content-scaling=fixed&page-id=28%3A118&starting-point-node-id=142%3A2375"
+                                    target="_blank">리디자인</a></button>
+                            <button><a href="https://aeioustore.com/" target="_blank">기존</a></button>
+                        </div>
+                    </div>
+                    <div class="webdummy">
+                        <div class="webproject webproject5">
+                            <a href="https://youngju0112.github.io/AKYUNG/" target="_blank">
+                                <img src="images/main4/icon.png" alt="">
+                            </a>
+                        </div>
+                        <div class="projecttitle">
+                            <p>애경 AKYUNG</p>
+                            <span>[퍼블리싱]</span>
+                        </div>
+                        <div class="webmemo">
+                            AKYUNG CLONE CODING
+                        </div>
+                        <div class="projectbutton">
+                            <button><a href="https://youngju0112.github.io/AKYUNG/" target="_blank">클론코딩</a></button>
+                            <button><a href="https://www.aekyung.co.kr/" target="_blank">기존</a></button>
+                        </div>
+                    </div>
+                    <div class="webdummy">
+                        <div class="webproject webproject6">
+                            <a href="https://youngju0112.github.io/sungsimdang/" target="_blank">
+                                <img src="images/main4/icon.png" alt="">
+                            </a>
+                        </div>
+                        <div class="projecttitle">
+                            <p>SUNGSIMDANG</p>
+                            <span>[퍼블리싱]</span>
+                        </div>
+                        <div class="webmemo">
+                            SUNGSIMDANG CLONE CODING
+                        </div>
+                        <div class="projectbutton">
+                            <button><a href="https://youngju0112.github.io/sungsimdang/" target="_blank">클론코딩</a></button>
+                            <button><a href="https://sungsimdang.co.kr" target="_blank">기존</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container main5" id="app" data-aos="fade-up">
+            <div class="maintitle">APP</div>
+            <div class="main5dummy">
+                <div class="appimg" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
+                    <img src="images/main5/app.png" alt="">
+                </div>
+                <div class="apptext">
+                    <p>맛있고 건강한 한끼레시피</p>
+                    <h4>FOODO 푸두</h4>
+                    <div class="overview">OVER VIEW</div><br>
+                    <span>“푸두”는 냉장고 속 재료만 입력하면 만들 수 있는 <br>맞춤 레시피를 추천하고, 밥 종류별 등급과 요리 대결로 <br>집밥을 더욱 재미있게 즐길 수 있으며, 단순한
+                        식사 준비를
+                        넘어 취미와 소통의 경험으로 확장하는 집밥 레시피 <br>플랫폼입니다.</span>
+                    <div class="appbutton">
+                        <button><a
+                                href="https://www.figma.com/proto/QUZYQvoofHCHmQ8znil64o/-%ED%91%B8%EB%91%90_%EC%95%B1%EB%94%94%EC%9E%90%EC%9D%B8_1%EC%A1%B0?node-id=431-637&t=BAHuszqH25Q334j7-1&scaling=min-zoom&content-scaling=fixed&page-id=371%3A462"
+                                target="_blank">제작프로세스</a></button>
+                        <button><a
+                                href="https://www.figma.com/proto/QUZYQvoofHCHmQ8znil64o/-%ED%91%B8%EB%91%90_%EC%95%B1%EB%94%94%EC%9E%90%EC%9D%B8_1%EC%A1%B0?node-id=230-1405&p=f&t=6keDVUChZerpS1QS-1&scaling=scale-down&content-scaling=fixed&page-id=210%3A426&starting-point-node-id=449%3A628&show-proto-sidebar=1"
+                                target="_blank">프로토타입</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container main6" id="branding" data-aos="fade-up">
+            <div class="maintitle">BRANDING</div>
+            <div class="main6dummy">
+                <div class="main6left" img class="main2img1">
+                    <div class="branding branding1" data-aos="fade-up" data-aos-delay="300">
+                        <a href="images/main6/Verden.pdf" target="_blank">
+                            <img src="images/main6/Icon.png" alt="">
+                        </a>
+                        <div class="projecttitle">
+                            <p>버든 VERDEN</p>
+                            <span>플라워 카페 브랜딩</span>
+                        </div>
+                    </div>
+                    <div class="branding branding2" data-aos="fade-up" data-aos-delay="400">
+                        <a href="images/main6/doshim.pdf" target="_blank">
+                            <img src="images/main6/Icon.png" alt="">
+                        </a>
+                        <div class="projecttitle">
+                            <p>도쉼 DOSHIM</p>
+                            <span>체험형 전시 브랜딩</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="main6right" img class="main2img1">
+                    <div class="branding branding3" data-aos="fade-up" data-aos-delay="500">
+                        <a href="images/main6/neung.pdf" target="_blank">
+                            <img src="images/main6/Icon.png" alt="">
+                        </a>
+                        <div class="projecttitle">
+                            <p>능금빵 NEUNG GUEM</p>
+                            <span>패키지</span>
+                        </div>
+                    </div>
+                    <div class="branding branding4" data-aos="fade-up" data-aos-delay="600">
+                        <a href="" target="_blank">
+                            <img src="images/main6/Icon.png" alt="">
+                        </a>
+                        <div class="projecttitle">
+                            <p>아롬 AROME</p>
+                            <span>디퓨저 선물 패키지</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="main6left" img class="main2img1" data-aos="fade-up" data-aos-delay="600">
+                    <div class="branding branding5">
+                        <a href="images/main6/fruit.jpg" target="_blank">
+                            <img src="images/main6/Icon.png" alt="">
+                        </a>
+                        <div class="projecttitle">
+                            <p>과일통통배</p>
+                            <span>로고 & 심볼 리디자인</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container main7" id="detail" data-aos="fade-up">
+            <div class="maintitle">DETAIL PAGE</div>
+            <div class="main7dummy">
+                <div class="detailpage">
+                    <div class="detailimg">
+                        <a href="#">
+                            <img src="images/main7/legodt.jpg" alt="">
+                        </a>
+                    </div>
+                    <p>LEGODT 루프 텀블러</p>
+                </div>
+                <div class="detailpage">
+                    <div class="detailimg"> <a href="#">
+                            <img src="images/main7/bed.jpg" alt="">
+                        </a></div>
+                    <p>여름 냉감 이불</p>
+                </div>
+                <div class="detailpage">
+                    <div class="detailimg"> <a href="#">
+                            <img src="images/main7/캡처.PNG" alt="">
+                        </a></div>
+                    <p>LEGODT 루프 텀블러</p>
+                </div>
+            </div>
+            <div class="main7popup">
+                 <button class="close-btn">&times;</button>
+                <img class="main7page1" src="images/main7/legodt.jpg" alt="">
+                <img class="main7page2" src="images/main7/bed.jpg" alt="">
+                <img class="main7page3" src="images/main7/bed.jpg" alt="">
+            </div>
+        </section>
+        <section class="container main8" id="cardnews" data-aos="fade-up">
+            <div class="maintitle">CARD NEWS</div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/card/card1.png" alt="">
+                        </a>
+                        <p>성심당 케익부띠끄</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/card/card2.png" alt="">
+                        </a>
+                        <p>레고트 와인잔</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/card/card3.png" alt="">
+                        </a>
+                        <p>버거리 통모짜치즈버거</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/card/card4.png" alt="">
+                        </a>
+                        <p>모스 티코스터</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/card/card5.png" alt="">
+                        </a>
+                        <p>미미달 항아리 손수건</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/card/card6.png" alt="">
+                        </a>
+                        <p>크록스 플로럴 컬렉션</p>
+                    </div>
+                    <!-- <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/card/card1.png" alt="">
+                        </a>
+                        <p>성심당 케익부띠끄</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/card/card1.png" alt="">
+                        </a>
+                        <p>성심당 케익부띠끄</p>
+                    </div>
+                </div> -->
+                    <div class="swiper-pagination"></div>
+                </div>
+        </section>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                breakpoints: {
+                    1920: {
+                        slidesPerView: 4
+                    },
+                    1024: {
+                        slidesPerView: 3
+                    },
+                    768: {
+                        slidesPerView: 2
+                    },
+                    425: {
+                        slidesPerView: 2
+                    }
+                },
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                keyboard: true,
+                loop: true,
+                clickable: true,
+                autoplay: true,
+
+            });
+        </script>
+
+        <div class="card-popup-overlay" id="cardPopup">
+            <div class="popup-inner" style="position: relative; display: inline-block;">
+                <img id="popupImage" src="" alt="팝업 이미지">
+                <span class="card-popup-close">&times;</span>
+            </div>
+        </div>
+
+        <section class="container main9" id="edit" data-aos="fade-up">
+            <div class="maintitle">EDIT</div>
+            <div class="main9dummy">
+                <div class="main9project">
+                    <a href="images/main7/tradition.pdf" target="_blank">
+                        <img src="images/main7/tradition.jpg" alt="">
+                    </a>
+                    <p>&앤트레디션 리플렛</p>
+                </div>
+                <div class="main9project">
+                    <a href="images/main7/jansport.pdf" target="_blank">
+                        <img src="images/main7/jansport.jpg" alt="">
+                    </a>
+                    <p>JANSPORT 브로슈어</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- gomail 버튼 -->
+        <div class="gomail">
+            <img src="images/mail.png" alt="Go mail">
+        </div>
+
+        <!-- 토글되는 메일 폼 -->
+        <div class="mail-form-wrapper" id="mailForm">
+            <span>CONTACT</span>
+            <p class="recipient-label"><strong>To :</strong> kyoungju0112@gmail.com</p>
+            <input type="text" id="sender-name" placeholder="Your Name">
+            <input type="email" id="sender-email" placeholder="Your Email Address">
+            <textarea id="sender-message" rows="5" placeholder="Message"></textarea>
+            <button id="send-mail-btn">Submit Message</button>
+        </div>
+
+        <div class="gotop">
+            <img src="images/gotop.png" alt="Go Top">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerdummy ">
+            <div class="finner ">
+                <div class="footerinner ">
+                    <p>CONTACT</p>
+                   <div class="number">
+                        <div>kyoungju0112@gmail.com</div>
+                        <div>kyoungju0112@naver.com</div>
+                   </div>
+                </div>
+                <div class="footerinner ">
+                    <p>PHONE NUMBER</p>
+                    <div class="number ">
+                        <div>+82 10 4232 6737</div>
+                    </div>
+                </div>
+                <div class="footerinner ">
+                    <p>NOTION</p>
+                    <button type="button" onclick="window.open('https://www.notion.so/KIMYOUNGJU_PORTFOLIO-25cb1781c2178026a38cef4acbdc47e7?source=copy_link', '_blank');">노션 바로가기</button>
+                </div>
+            </div>
+        </div>
+        <p>©KIM YOUNG JU PORTFOLIO</p>
+    </footer>
+
+    <script>
+        AOS.init()
+    </script>
+
+</body>
+
+</html>

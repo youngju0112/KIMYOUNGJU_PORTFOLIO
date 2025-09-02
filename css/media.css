@@ -1,0 +1,752 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1440px) {
+    html {
+        font-size: 8px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0px 60px;
+    }
+
+    .maintitle {
+        font-size: 16rem;
+        line-height: 16rem;
+    }
+
+    header ul li button {
+        width: 130px;
+    }
+
+    /* main2 */
+    .main2>.main2dummy>.main2img1 {
+        position: absolute;
+        width: 15%;
+        top: -20%;
+        left: 2%;
+    }
+
+    .main2>.main2dummy>.main2img2 {
+        position: absolute;
+        width: 15%;
+        top: 30%;
+        left: 5%;
+    }
+
+    .main2>.main2dummy>.main2img3 {
+        position: absolute;
+        width: 15%;
+        bottom: 20%;
+        right: 7%;
+    }
+
+    .main3 .profiletext {
+        width: 60%;
+        /* margin-left: 200px; */
+    }
+
+    .main4 .webprojectdummy {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 4.5rem;
+    }
+
+    .main4 .webdummy .webproject {
+        width: 100%;
+        height: 300px;
+        border-radius: 30px;
+    }
+
+    .main6 .main6right {
+        gap: 50px;
+    }
+
+
+    .main4 .webdummy .projecttitle {
+        gap: 10px;
+    }
+
+    /* 
+    .main4 .webprojectdummy .webdummy .projectbutton>button {
+        width: 120px;
+        height: 35px;
+        border: none;
+        color: white;
+        background-color: #121212;
+        border-radius: 30px;
+        margin-top: 20px;
+        margin-right: 5px;
+    } */
+
+    /* 
+    .main5 .appimg img{
+       height: 40rem;
+    } */
+
+    .main6 .branding a {
+        display: block;
+        width: 100%;
+        height: 300px;
+    }
+
+    .main7 .detailpage .detailimg {
+        height: 68rem;
+    }
+}
+
+
+@media screen and (max-width: 1330px) {
+    html {
+        font-size: 7.5px;
+    }
+
+    header ul li button {
+        width: 105px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: black;
+        transition: all 0.3s ease;
+    }
+}
+
+/* 1024 */
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 7.5px;
+    }
+
+    p {
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    span {
+        font-size: 2rem;
+        line-height: 4rem;
+        font-weight: 600;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0px 50px;
+    }
+
+    .maintitle {
+        font-size: 15rem;
+        line-height: 15rem;
+    }
+
+
+    .main1 {
+        margin-bottom: 20rem;
+    }
+
+    .main1 .main1cover {
+        width: 100%;
+    }
+
+    .main1 .main1cover .maincover1 {
+        width: 580px;
+        height: 320px;
+        position: relative;
+    }
+
+    .main1 .main1dummy .main1cover .maincover1 img:nth-child(1) {
+        width: 60%;
+    }
+
+    .main1 .main1dummy .main1cover .maincover1 img:nth-child(2) {
+        width: 60%;
+        left: 10%;
+    }
+
+    .main1 .main1dummy .main1cover .maincover1 img:nth-child(3) {
+        width: 35%;
+    }
+
+    .main1 .main1dummy .main1cover .maincover1 img:nth-child(4) {
+        width: 20%;
+    }
+
+    /* 
+    .main1title {
+        width: 100%;
+    } */
+
+    .main1 .main1cover .maincover1 {
+        width: 100%;
+        height: 32rem;
+        position: relative;
+    }
+
+    .main1 .main1dummy {
+        width: 100%;
+        display: flex;
+        margin-top: 20rem;
+    }
+
+    .youngju {
+        position: relative;
+        /* width: 300px;
+        height: 200px; */
+        margin-left: 13rem;
+    }
+
+
+    .main2>.main2dummy>.main2img1 {
+        position: absolute;
+        width: 15%;
+        top: -5%;
+        left: 2%;
+    }
+
+    .main2>.main2dummy>.main2img2 {
+        position: absolute;
+        width: 15%;
+        top: 30%;
+        left: 5%;
+    }
+
+    .main2>.main2dummy>.main2img3 {
+        position: absolute;
+        width: 15%;
+        bottom: 40%;
+        right: 7%;
+    }
+
+    .main3 .profiletext {
+        width: 50%;
+    }
+
+    .main3 .profiletext .p-left {
+        gap: 25px;
+    }
+
+    .main3 .profiletext .p-right {
+        gap: 10px;
+    }
+
+    .main3 .profileimg {
+        margin-left: 60px;
+        position: relative;
+        width: 45%;
+    }
+
+    .main3 .profileimg img:nth-child(1) {
+        position: absolute;
+        width: 90%;
+        left: 2rem;
+    }
+
+    .main3 .profileimg img:nth-child(2) {
+        width: 12rem;
+        left: -6rem
+    }
+
+    .main3 .profileimg img:nth-child(3) {
+        width: 13rem;
+        left: 0;
+    }
+
+    .main3 .profileimg img:nth-child(4) {
+        width: 4rem;
+    }
+
+    .main3 .profiletext .skill .skillicon {
+        width: 30rem;
+    }
+
+    .main3 .profiletext .skill .skillicon img {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    /* main4 */
+    .main4 .webdummy {
+        width: 30%;
+    }
+
+    .main4 .webprojectdummy {
+        gap: 30px;
+    }
+
+    .main4 .webdummy .webproject {
+        width: 100%;
+        height: 200px;
+        border-radius: 3rem;
+    }
+
+    .main4 .webprojectdummy .webdummy .projectbutton>button {
+        width: 80px;
+        height: 30px;
+    }
+
+    .main5 .appimg img {
+        width: 80%;
+        margin-left: 7rem;
+    }
+
+    .main6 .branding a {
+        display: block;
+        width: 100%;
+        height: 200px;
+    }
+
+    .main5 .main5dummy .apptext {
+        width: 50%;
+        margin-left: 10rem;
+        margin-top: 4rem;
+        display: block;
+        text-align: left;
+    }
+
+    .main5 .main5dummy .apptext .appbutton button {
+        margin-top: 4rem;
+    }
+
+    .main7 .detailpage .detailimg {
+        height: 50rem;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .maintitle {
+        font-size: 14rem;
+        line-height: 14rem;
+        margin-bottom: 10rem;
+    }
+
+    span {
+        font-size: 2rem;
+        line-height: 3rem;
+        font-weight: 600;
+    }
+
+    header {
+        background-color: #fff;
+    }
+
+    body.dark-mode header {
+        background-color: #121212;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .onoff {
+        padding-right: 4rem;
+        padding-bottom: 0.7rem;
+    }
+
+    /* 햄버거 버튼 보이기 */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* 오버레이가 show 클래스 있으면 flex로 표시 */
+    .mobile-menu-overlay.show {
+        display: flex;
+    }
+
+    .mobile-menu-overlay ul li button {
+        font-size: 3rem;
+    }
+
+    .main1 .main1dummy {
+        margin-top: 18rem;
+    }
+
+    .main1 .main1dummy .main1cover .maincover1 img:nth-child(1) {
+        width: 75%;
+        margin-left: 4rem;
+    }
+
+    .main1 .main1dummy .main1cover .maincover1 img:nth-child(2) {
+        display: none;
+    }
+
+    .main1 .main1dummy .main1cover .maincover1 img:nth-child(3) {
+        display: none;
+    }
+
+    .main1 .main1dummy .main1cover .maincover1 img:nth-child(4) {
+        margin-left: 15rem;
+        width: 30%;
+    }
+
+    .youngju {
+        margin-left: 2rem;
+        /* margin-bottom: 5rem; */
+        margin-top: 0rem;
+    }
+
+    .main2>.main2dummy>.main2img2 {
+        position: absolute;
+        width: 15%;
+        top: 40%;
+        left: 5%;
+    }
+
+    .main2>.main2dummy>.main2img3 {
+        position: absolute;
+        width: 15%;
+        bottom: 50%;
+        right: 7%;
+    }
+
+    .main3 .main3dummy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .main3 .profileimg {
+        order: 1;
+        width: 50rem;
+        /* 이미지 고정 크기 */
+        height: auto;
+        margin: 0;
+        /* 너무 큰 좌우 마진 제거 */
+    }
+
+    .main3 .profileimg img:nth-child(1) {
+        width: 95%;
+        display: block;
+        margin: 0 auto;
+        position: static;
+    }
+
+    .main3 .profiletext {
+        order: 2;
+        width: 100%;
+        max-width: 600px;
+        /* 텍스트 영역 넓게 */
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
+    .main3 .profiletext .p-left {
+        gap: 140px;
+    }
+
+    .main3 .profiletext .p-right {
+        gap: 130px;
+    }
+
+    .main4 .webdummy {
+        width: 47%;
+    }
+
+    .main4 .webbutton {
+        gap: 3rem;
+        font-size: 3rem;
+        margin-bottom: 11rem;
+    }
+
+    h4 {
+        font-weight: 700;
+        font-size: 7rem;
+    }
+
+    .main5 .appimg img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .main5 .main5dummy .apptext .overview {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .main6 .main6dummy .branding {
+        width: 45%;
+        border-radius: 3rem;
+        background-color: white;
+    }
+
+    .main6 .main6left {
+        gap: 3rem;
+        margin: 4rem 0;
+    }
+
+    .main6 .main6right {
+        gap: 3rem;
+        margin: 4rem 0;
+    }
+
+    .main7 .detailpage .detailimg {
+        height: 40rem;
+    }
+
+    .main9 {
+        margin-bottom: 0rem;
+    }
+
+    .main9 .main9dummy {
+        display: flex;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width:425px) {
+    html {
+        font-size: 7px;
+    }
+
+    .onoff {
+        padding-right: 5rem;
+    }
+
+    .onoff img {
+        padding-right: 20px;
+    }
+
+    .maintitle {
+        font-size: 9rem;
+        line-height: 9rem;
+        margin-bottom: 7rem;
+    }
+
+    .container {
+        padding: 0px 20px;
+
+    }
+
+    .main1 .main1dummy .main1cover .maincover1 img:nth-child(1) {
+        width: 75%;
+        margin-left: 2rem;
+    }
+
+    .main1 .main1dummy .main1cover .maincover1 img:nth-child(4) {
+        margin-left: 14rem;
+        width: 30%;
+    }
+
+    .youngju {
+        margin-top: -13rem;
+        width: 18rem;
+    }
+
+    .youngju img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    /* 각 글자 위치 조정 */
+    .youngju img:nth-child(1) {
+        top: 1rem;
+        left: 0;
+    }
+
+    /* Y */
+    .youngju img:nth-child(2) {
+        top: 1rem;
+        left: 4rem;
+    }
+
+    /* O */
+    .youngju img:nth-child(3) {
+        top: 3rem;
+        left: 8rem;
+    }
+
+    /* U */
+    .youngju img:nth-child(4) {
+        top: 2rem;
+        left: 12rem;
+    }
+
+    /* N */
+    .youngju img:nth-child(5) {
+        top: 2rem;
+        left: 16rem;
+    }
+
+    /* G */
+    .youngju img:nth-child(6) {
+        top: 7rem;
+        left: 10rem;
+    }
+
+    /* J */
+    .youngju img:nth-child(7) {
+        top: 8rem;
+        left: 15rem;
+    }
+
+
+    .main2 .main2dummy img {
+        display: none;
+    }
+
+
+    .main2 .main2dummy>h4 {
+        font-size: 6rem;
+    }
+
+    .main2 .main2dummy {
+        height: 50rem;
+    }
+
+    .main3 .profiletext {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        /* 텍스트 중앙정렬 */
+        margin: 0 auto;
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .main3 .profileimg {
+        margin-left: 60px;
+    }
+
+    .main3 .profiletext .p-left,
+    .main3 .profiletext .p-right {
+        display: flex;
+        /* 추가 */
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        width: 100%;
+        text-align: center;
+        /* 텍스트 가운데 정렬 */
+    }
+
+    .main3 .profiletext .skill .skillicon {
+        margin: 0 auto;
+        /* 가운데 정렬용 */
+    }
+
+    .main4 .webdummy {
+        width: 100%;
+    }
+
+    .main4 .webdummy .webproject {
+        width: 100%;
+        height: 250px;
+    }
+
+    .main4 .webbutton {
+        display: none;
+    }
+
+    .main5 .main5dummy .apptext h4 {
+        margin-bottom: 2rem;
+    }
+
+    .main5 .main5dummy {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main5 .main5dummy .apptext {
+        width: 100%;
+        margin-left: 0rem;
+        margin-top: 7rem;
+    }
+
+    .main5 .appimg {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .main5 .appimg img {
+        height: 50rem;
+    }
+
+    .main6 .main6dummy .branding {
+        width: 100%;
+    }
+
+    .main6 .main6dummy .branding a {
+        height: 250px;
+    }
+
+    .main6 .main6left {
+        display: block;
+    }
+
+    .main6 .branding1,
+    .branding2,
+    .branding3,
+    .branding4 {
+        margin-bottom: 3rem;
+    }
+
+    .main6 .main6right {
+        display: block;
+    }
+
+    .main7 .detailpage .detailimg {
+        height: 22rem;
+    }
+
+    /* .main7 .main7dummy {
+        flex-direction: column;
+        display: flex
+    }
+
+    .main7 .detailpage {
+        width: 100%;
+    } */
+    .gomail {
+        bottom: 17rem;
+        right: 4%;
+    }
+
+
+    footer .footerdummy .finner {
+        display: flex;
+        flex-direction: column;
+        padding-top: 7rem;
+        gap: 4rem;
+    }
+
+    footer>p {
+        background-color: black;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .youngju {
+        margin-left: 1rem;
+    }
+
+    .main3 .profileimg {
+        margin-left: 20px;
+        width: 42rem;
+    }
+
+    .main7 .detailpage .detailimg {
+        border-radius: 2rem;
+    }
+
+    .main9 {
+        margin-bottom: 10rem;
+    }
+
+    .main9 .main9dummy {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main9 .main9dummy .main9project {
+        width: 100%;
+        height: 33rem;
+        border-radius: 3rem;
+    }
+}

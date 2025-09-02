@@ -1,0 +1,1403 @@
+@charset "utf-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+/* 지마켓 산스 폰트 */
+@font-face {
+    font-family: 'Helvetica';
+    src: url(../helvetica-neue/HelveticaNeueMedium.otf);
+}
+
+
+/* 스크롤 */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FDCDFF;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #eeeeee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url('../images/header/cursor.png')2 2, auto;
+}
+
+*:active {
+    cursor: url('../images/header/point.png'), auto;
+}
+
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Pretendard';
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: url('../images/header/point.png'), auto;
+}
+
+.maintitle {
+    font-family: 'Helvetica';
+    font-size: 18rem;
+    line-height: 18rem;
+    letter-spacing: -3%;
+    margin-bottom: 12rem;
+}
+
+.container {
+    width: 100%;
+    padding: 0px 70px;
+}
+
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+button {
+    font-weight: 500;
+    font-size: 2rem;
+    cursor: url('../images/header/point.png'), auto;
+}
+
+strong {
+    font-weight: 800;
+}
+
+p {
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 5.5rem;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 9.6rem;
+
+}
+
+span {
+    font-size: 2.8rem;
+    line-height: 4rem;
+    font-weight: 600;
+}
+
+main>button {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+/* .container {
+    width: 1140px;
+    margin: 0 auto;
+} */
+
+/* darkmode */
+body.dark-mode,
+body.dark-mode * {
+    cursor: url('../images/header/cursor2.png') 2 2, auto !important;
+}
+
+body.dark-mode:active {
+    cursor: url('../images/header/point2.png'), auto;
+}
+
+
+body.dark-mode a:hover {
+    cursor: url('../images/header/point2.png'), auto;
+}
+
+body.dark-mode .main4 .webprojectdummy .webdummy .projectbutton>button,
+body.dark-mode .main5 .main5dummy .apptext .appbutton button {
+    background-color: #fff;
+    color: black;
+}
+
+/* body.dark-mode img:hover {
+    cursor: url('../images/header/point2.png'), auto;
+}
+body.dark-mode header button:hover {
+    cursor: url('../images/header/point2.png'), auto;
+}   */
+.img-off {
+    display: none;
+}
+
+body.dark-mode .img-on {
+    display: none;
+}
+
+body.dark-mode .img-off {
+    display: inline;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+body.dark-mode .textbanner {
+    color: #000;
+}
+
+body.dark-mode header ul li button.active {
+    color: white;
+    background-color: #FDCDFF;
+    opacity: 1;
+}
+
+body.dark-mode .white-on-dark {
+    filter: invert(1) brightness(1.2) contrast(1.1);
+    transition: filter 0.3s ease;
+}
+
+body.dark-mode .main3 .profiletext .skill .skillicon img{
+    filter: invert(1) brightness(1.2) contrast(1.1);
+}
+
+/* header */
+header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    position: fixed;
+}
+
+h1 button {
+    height: 5rem;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+h1 button img {
+    width: 100%;
+    height: 100%;
+}
+
+header .container {
+    margin: 2rem 0;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav {
+    height: 5rem;
+    border-radius: 50px;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+}
+
+header nav ul {
+    font-family: 'Helvetica' !important;
+    justify-content: space-between;
+    display: flex;
+    color: black;
+}
+
+header ul li button {
+    border-radius: 30px;
+    text-align: center;
+    width: 150px;
+    height: 5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: black;
+    transition: all 0.3s ease;
+    padding: 1.5rem 0;
+    font-family: 'Helvetica';
+}
+
+header ul li button.active {
+    color: white;
+    background-color: black;
+    height: 5rem;
+    opacity: 1;
+}
+
+header nav button:hover {
+    height: 5rem;
+    cursor: url('../images/header/point.png'), auto;
+    background-color: #ddd;
+    color: black;
+}
+
+/* 다크모드 버튼 */
+.onoff {
+    cursor: pointer;
+    border-radius: 60%;
+    text-align: center;
+    height: 5rem;
+}
+
+.onoff img {
+    height: 100%;
+}
+
+
+/* 햄버거 버튼 숨김 (기본) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    z-index: 1001;
+    height: 4rem;
+}
+
+.menu-toggle>img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 모바일 메뉴 오버레이 기본 스타일 */
+.mobile-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 6rem;
+    /* 헤더 아래 위치 */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: white;
+    /* 기본 흰색 배경 */
+    color: black;
+    /* 기본 글씨 검정 */
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 20px 20px;
+    /* 위쪽 공간 넉넉하게 */
+    box-sizing: border-box;
+    border-bottom: 2px solid #ccc;
+    /* 하단 선 */
+    overflow-y: auto;
+    max-height: 80vh;
+    /* 화면 80% 높이 제한 */
+}
+
+/* 모바일 메뉴 열렸을 때 */
+.mobile-menu-overlay.show {
+    display: flex;
+}
+
+/* 메뉴 목록 */
+.mobile-menu-overlay ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    /* 메뉴 위치 위로 올림 */
+}
+
+/* 메뉴 항목 */
+.mobile-menu-overlay ul li {
+    margin: 10px 0;
+    /* 항목 간 간격 넉넉히 */
+    font-size: 1.5rem;
+    /* 글씨 크기 크게 */
+    font-weight: 600;
+}
+
+/* 버튼 스타일 */
+.mobile-menu-overlay ul li button {
+    background: none;
+    border: none;
+    color: inherit;
+    /* 부모 색상 따라감 */
+    cursor: pointer;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 2rem;
+}
+
+.mobile-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 440px;
+    background-color: white;
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    overflow: hidden;
+}
+
+/* 다크모드 시 메뉴 스타일 */
+body.dark-mode .mobile-menu-overlay {
+    background-color: #121212;
+    color: white;
+    border-bottom: 2px solid #444;
+    /* 다크모드 버튼과 겹치지 않도록 위쪽 여유 추가 */
+}
+
+/* main1 */
+.main1 {
+    padding: 0px 150px;
+    margin-bottom: 22rem;
+}
+
+.main1 .main1dummy {
+    width: 100%;
+    display: flex;
+    margin-top: 200px;
+}
+
+.main1title {
+    width: 60%;
+}
+
+.main1 .main1cover .maincover1 {
+    width: 40%;
+    height: 320px;
+    position: relative;
+}
+
+.main1 .main1dummy .main1cover .maincover1 img:nth-child(1) {
+    position: absolute;
+    top: 0;
+    margin-left: 20rem;
+    animation: star1 10s linear infinite;
+}
+
+@keyframes star1 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.main1 .main1dummy .main1cover .maincover1 img:nth-child(2) {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+
+}
+
+.main1 .main1dummy .main1cover .maincover1 img:nth-child(3) {
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+}
+
+.main1 .main1dummy .main1cover .maincover1 img:nth-child(4) {
+    position: absolute;
+    top: 15%;
+    margin-left: 30rem;
+}
+
+.youngju {
+    position: relative;
+    width: 30rem;
+    height: 20rem;
+    margin-left: 13rem;
+    margin-top: 80px;
+}
+
+.youngju img {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+}
+
+/* 각 글자 위치 조정 */
+.youngju img:nth-child(1) {
+    top: 3rem;
+    left: 0;
+}
+
+/* Y */
+.youngju img:nth-child(2) {
+    top: 1rem;
+    left: 6rem;
+}
+
+/* O */
+.youngju img:nth-child(3) {
+    top: 3rem;
+    left: 12rem;
+}
+
+/* U */
+.youngju img:nth-child(4) {
+    top: 2rem;
+    left: 17.5rem;
+}
+
+/* N */
+.youngju img:nth-child(5) {
+    top: 2rem;
+    left: 24rem;
+}
+
+/* G */
+.youngju img:nth-child(6) {
+    top: 10rem;
+    left: 16rem;
+}
+
+/* J */
+.youngju img:nth-child(7) {
+    top: 8rem;
+    left: 22rem;
+}
+
+/* U */
+/* main2 */
+.main2 {
+    margin-bottom: 200px;
+    margin: 0 auto;
+}
+
+.main2 .main2dummy {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 70rem;
+}
+
+.main2 .main2dummy>h4 {
+    margin-bottom: 5rem;
+}
+
+
+
+/* 메모지 */
+
+.main2>.main2dummy>.main2img1>img {
+    width: 100%;
+
+}
+
+.main2>.main2dummy>.main2img2>img {
+    width: 100%;
+
+}
+
+.main2>.main2dummy>.main2img3>img {
+    width: 100%;
+
+}
+
+.main2>.main2dummy>.main2img1 {
+    position: absolute;
+    top: -20%;
+    left: 9%;
+}
+
+.main2>.main2dummy>.main2img2 {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+.main2>.main2dummy>.main2img3 {
+    position: absolute;
+    bottom: 20%;
+    right: 7%;
+}
+
+
+/* 텍스트 지나가는거 */
+.textbanner {
+    font-family: 'Helvetica';
+    overflow: hidden;
+    width: 100%;
+}
+
+.textbanner .textslide {
+    font-size: 3.5rem;
+    width: 100%;
+    height: 6rem;
+    background-color: #D3BDFF;
+    white-space: nowrap;
+    display: inline-block;
+    padding-top: 1rem;
+    display: flex;
+    gap: 2rem;
+    flex-shrink: 0;
+    width: max-content;
+    overflow: hidden;
+    animation: text-to-left 50s linear infinite;
+}
+
+.textbanner .textslide .bannertext>img {
+    margin-left: 2rem;
+    padding-top: 0.5rem;
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+@keyframes text-to-left {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+/* main3 */
+
+.main3 {
+    margin-top: 20rem;
+    flex-direction: row;
+}
+
+.main3 .main3dummy {
+    display: flex;
+
+}
+
+.main3 .profileimg {
+    margin-left: 60px;
+    position: relative;
+    width: 60%;
+    /* height: 580px; */
+}
+
+.main3 .profileimg img:nth-child(1) {
+    position: absolute;
+    width: 60%;
+    left: 12rem;
+}
+
+.main3 .profileimg img:nth-child(2) {
+    position: absolute;
+    top: 16rem;
+    left: 0;
+    animation: star2 2s infinite ease-in-out;
+    width: 158px;
+    height: 99px;
+    object-fit: contain;
+}
+
+.main3 .profileimg img:nth-child(3) {
+    position: absolute;
+    top: 0px;
+    left: 2rem;
+    animation: star 2s infinite ease-in-out;
+    width: 195px;
+    height: 113px;
+    object-fit: contain;
+}
+
+.main3 .profileimg img:nth-child(4) {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+    animation: star 2s infinite ease-in-out;
+    width: 68px;
+    height: 68px;
+    object-fit: contain;
+}
+
+@keyframes star {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes star2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* skill */
+.main3 .profiletext {
+    width: 45%;
+    /* margin-left: 200px; */
+}
+
+.main3 .profiletext .skill h6 {
+    line-height: 6rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.main3 .profiletext .skill p {
+    line-height: 3.5rem;
+    font-size: 2.1rem;
+    font-weight: 400;
+}
+
+.main3 .profiletext .skill p>span {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.main3 .profiletext .p-left {
+    display: flex;
+    align-items: top;
+    gap: 10rem;
+}
+
+.main3 .profiletext .p-right {
+    margin-top: 5%;
+    display: flex;
+    gap: 10rem;
+    align-items: top;
+}
+
+/* .main3 .profiletext .skill {
+    width: 400px;
+    height: 300px;
+} */
+
+.main3 .profiletext .skill .skillicon {
+    width: 20rem;
+}
+
+.main3 .profiletext .skill .skillicon img {
+    padding: 0.3rem;
+    width: 6rem;
+    height: 6rem;
+}
+
+
+/* main4 */
+.main4 {
+    margin-top: 23rem;
+}
+
+.main4 .main4title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+
+.main4 .webbutton {
+    font-family: 'Helvetica';
+    display: flex;
+    gap: 4rem;
+    font-size: 4rem;
+    margin-bottom: 13rem;
+    color: #dddddd;
+
+}
+
+.main4 .webdummy .webproject {
+    width: 100%;
+    height: 440px;
+    border-radius: 30px;
+    background-color: black;
+}
+
+.main4 .webprojectdummy {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6rem;
+}
+
+.main4 .webdummy {
+    width: 31%;
+}
+
+.main4 .webprojectdummy .webmemo {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+
+.projecttitle {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 1rem;
+}
+
+.main4 .webprojectdummy .webdummy .projectbutton>button {
+    width: 13rem;
+    height: 4rem;
+    border: none;
+    color: white;
+    background-color: #121212;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+
+.main4 .webprojectdummy .webdummy .projectbutton>button:hover {
+    background-color: #FDCDFF;
+    color: #121212;
+}
+
+/* 이미지 바뀌는거  */
+.webproject a {
+    border-radius: 3rem;
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* 추가!! */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: background-image 0.5s linear;
+}
+
+.webproject a>img {
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+}
+
+.webproject a:hover>img {
+    display: block;
+}
+
+/* 각각 다른 이미지 지정 */
+.webproject1 a {
+    background-image: url('../images/main4/1.jpg');
+}
+
+.webproject1 a:hover {
+    background-image: url('../images/main4/1-1.jpg');
+}
+
+.webproject2 a {
+    background-image: url('../images/main4/2.jpg');
+}
+
+.webproject2 a:hover {
+    background-image: url('../images/main4/2-2.jpg');
+}
+
+.webproject3 a {
+    background-image: url('../images/main4/3.jpg');
+}
+
+.webproject3 a:hover {
+    background-image: url('../images/main4/3-1.jpg');
+}
+
+.webproject4 a {
+    background-image: url('../images/main4/4.jpg');
+}
+
+.webproject4 a:hover {
+    background-image: url('../images/main4/4-1.jpg');
+}
+
+.webproject5 a {
+    background-image: url('../images/main4/6.jpg');
+}
+
+.webproject5 a:hover {
+    background-image: url('../images/main4/6-1.jpg');
+}
+
+.webproject6 a {
+    background-image: url('../images/main4/5.jpg');
+}
+
+.webproject6 a:hover {
+    background-image: url('../images/main4/5-1.jpg');
+}
+
+.webbutton div {
+    color: #ddd;
+    /* 기본 색 */
+    cursor: pointer;
+    user-select: none;
+}
+
+.webbutton div.active {
+    color: black;
+    font-weight: bold;
+    /* 밑줄은 없애기 */
+    text-decoration: none;
+}
+
+/* main5 */
+.main5 {
+    margin-top: 200px;
+    width: 100%;
+}
+
+.main5 .appimg {
+    width: 50%;
+}
+
+.main5 .appimg img {
+    position: relative;
+    width: 100%;
+    height: 78rem;
+    object-fit: contain;
+}
+
+
+.main5 .main5dummy {
+    display: flex;
+}
+
+.main5 .main5dummy .apptext {
+    width: 50%;
+    margin-top: 4rem;
+    display: block;
+    text-align: left;
+}
+
+.main5 .main5dummy .apptext .overview {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.main5 .main5dummy .apptext h4 {
+    color: #FF547C;
+    margin-bottom: 12rem;
+    font-weight: 700;
+}
+
+.main5 .main5dummy .apptext .appbutton button {
+    margin-top: 8rem;
+    width: 15rem;
+    height: 5rem;
+    border-radius: 3rem;
+    border: none;
+    margin-right: 1.5rem;
+    background-color: black;
+    color: white;
+}
+
+.main5 .main5dummy .apptext .appbutton button:hover {
+    background-color: #FF547C;
+}
+
+/* .main5 .apptext>.overview {
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
+} */
+
+/* main6 */
+.main6 {
+    margin-top: 20rem;
+}
+
+.main6 .main6dummy .branding {
+    width: 31%;
+    border-radius: 3rem;
+}
+
+.main6 .main6left {
+    display: flex;
+    justify-content: flex-start;
+    margin: 6rem 0;
+    gap: 6rem;
+}
+
+.main6 .main6right {
+    display: flex;
+    gap: 6rem;
+    justify-content: flex-end;
+    margin: 6rem 0;
+}
+
+.main6 .branding a {
+    display: block;
+    width: 100%;
+    height: 44rem;
+    border-radius: 3rem;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s linear;
+    position: relative;
+}
+
+.main6 .branding a>img {
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    display: none;
+}
+
+.main6 .branding a:hover>img {
+    display: block;
+}
+
+/* 각 브랜딩 별 기본 이미지 */
+.main6 .branding1 a {
+    background-image: url('../images/main6/1.png');
+}
+
+.main6 .branding2 a {
+    background-image: url('../images/main6/2.png');
+}
+
+.main6 .branding3 a {
+    background-image: url('../images/main6/3.png');
+}
+
+.main6 .branding4 a {
+    background-image: url('../images/main6/4.png');
+}
+
+.main6 .branding5 a {
+    background-image: url('../images/main6/5.png');
+}
+
+/* 호버 시 변경 이미지 */
+.main6 .branding1 a:hover {
+    background-image: url('../images/main6/1_1.png');
+}
+
+.main6 .branding2 a:hover {
+    background-image: url('../images/main6/2_1.png');
+}
+
+.main6 .branding3 a:hover {
+    background-image: url('../images/main6/3_1.png');
+}
+
+.main6 .branding4 a:hover {
+    background-image: url('../images/main6/4_1.png');
+}
+
+.main6 .branding5 a:hover {
+    background-image: url('../images/main6/5_1.png');
+}
+
+
+
+/* main7 */
+.main7,
+.main8,
+.main9 {
+    margin-top: 20rem;
+
+}
+
+.main7,
+.main8,
+.main9>.maintitle {
+    text-align: center;
+}
+
+.main7 {
+    position: relative;
+}
+
+.main7 .main7dummy {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.main7 .detailpage {
+    width: 31%;
+}
+
+.main7 .detailpage .detailimg {
+    height: 70rem;
+    border-radius: 3rem;
+    overflow-y: scroll;
+    background-color: black;
+    margin-bottom: 15px;
+}
+
+.main7 .detailpage .detailimg::-webkit-scrollbar {
+    display: none;
+}
+
+.main7 .detailpage .detailimg a>img {
+    width: 100%;
+}
+
+.main7 p {
+    font-size: 2.5rem;
+}
+
+.main7 .main7popup {
+    width: 35%;
+    height: 90vh;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    backdrop-filter: blur(10px);
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    display: none;
+}
+
+.main7popup img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.main7popup .on {
+    display: block;
+}
+
+.main7 .main7popup {
+    overflow-y: auto;
+}
+
+.main7popup .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* main8 */
+
+.main8 p {
+    font-size: 2.2rem;
+    text-align: left;
+}
+
+.main8 .swiper-slide a img {
+    width: 100%;
+    border-radius: 3rem;
+}
+
+.main8 .swiper-slide {
+    width: 40rem;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+    display: none;
+}
+
+/* cardnews popup */
+.card-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    display: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.card-popup-overlay img {
+    max-width: 70vw;
+    max-height: 70vh;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    display: block;
+}
+
+.card-popup-close {
+    position: absolute;
+    top: 0.3rem;
+    right: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+    cursor: pointer;
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    font-weight: bold;
+    user-select: none;
+    z-index: 10000;
+}
+
+/* .main8 .main8dummy {
+    display: flex;
+    justify-content: space-between;
+    height: 44rem;
+}
+
+.main8 .card img {
+    width: 420px;
+    height: 420px;
+    border-radius: 30px;
+}
+
+
+.main8 .card:hover img {
+    width: 450px;
+    height: 450px;
+    border-radius: 30px;
+    transition: all 0.5s;
+    transform: translateY(10px) linear;
+}
+
+.main8 .card1 {
+    transform: rotate(-4deg);
+}
+
+.main8 .card2 {
+
+    transform: rotate(10deg);
+}
+
+.main8 .card3 {
+    transform: rotate(3deg);
+}
+
+.main8 .card4 {
+    transform: rotate(-10deg);
+} */
+.main9 p {
+    font-size: 2.2rem;
+    text-align: left;
+}
+
+.main9 .main9dummy {
+    display: flex;
+    gap: 6rem;
+}
+
+.main9 .main9dummy .main9project {
+    width: 86rem;
+    height: 45rem;
+    border-radius: 3rem;
+}
+
+.main9 .main9dummy .main9project img {
+    width: 100%;
+    border-radius: 3rem;
+}
+
+.main9 {
+    margin-bottom: 15rem;
+}
+
+/* gotop */
+.gotop {
+    position: fixed;
+    bottom: 6%;
+    right: 4%;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.gotop>img {
+    object-fit: cover;
+    width: 10rem;
+    height: 10rem;
+}
+
+.gomail {
+    position: fixed;
+    bottom: 15%;
+    right: 4%;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.gomail>img {
+    object-fit: cover;
+    width: 10rem;
+    height: 10rem;
+}
+
+.mail-form-wrapper {
+    display: none;
+    position: fixed;
+    bottom: 26%;
+    right: 4%;
+    width: 30rem;
+    background: white;
+    border-radius: 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    z-index: 9998;
+    box-sizing: border-box;
+}
+
+.mail-form-wrapper span {
+    font-weight: 700;
+}
+
+.mail-form-wrapper input,
+.mail-form-wrapper textarea {
+    font-size: 1.5rem;
+    /* 텍스트 크기 */
+    font-family: 'Pretendard';
+}
+
+.mail-form-wrapper.show {
+    display: block;
+}
+
+.mail-form-wrapper .recipient-label {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.mail-form-wrapper input,
+.mail-form-wrapper textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+}
+
+.mail-form-wrapper button {
+    width: 100%;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+textarea {
+    background-color: #FDCDFF;
+}
+body.dark-mode footer{
+    background-color: #252525;
+}
+footer,
+footer * {
+    cursor: url('../images/header/cursor2.png') 2 2, auto;
+}
+
+
+/* footer */
+footer {
+    text-align: center;
+    width: 100%;
+    height: 50rem;
+    background-color: black;
+    color: white;
+}
+
+footer .footerdummy {
+    width: 70%;
+    margin: 0 auto;
+}
+
+footer .footerdummy .finner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15rem;
+}
+
+footer .number {
+    font-size: 1.9rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+}
+
+footer>p {
+    text-align: center;
+    font-size: 2.2rem;
+    line-height: 4rem;
+    padding: 8rem;
+    font-family: 'Helvetica';
+    color: #7c7c7c;
+}
+
+footer button {
+    width: 15rem;
+    height: 3.3rem;
+    border-radius: 30px;
+    border: none;
+    background-color: #FDCDFF;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer .footerinner {
+    width: 30rem;
+    margin: 0 auto;
+}
+
+footer .footerinner button:hover {
+    background-color: white;
+    color: black;
+    cursor: url('../images/header/point2.png') !important;
+}
