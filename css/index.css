@@ -173,7 +173,7 @@ body.dark-mode .white-on-dark {
     transition: filter 0.3s ease;
 }
 
-body.dark-mode .main3 .profiletext .skill .skillicon img{
+body.dark-mode .main3 .profiletext .skill .skillicon img {
     filter: invert(1) brightness(1.2) contrast(1.1);
 }
 
@@ -273,6 +273,7 @@ header nav button:hover {
     right: 2rem;
     top: 2rem;
     z-index: 1001;
+    width: 5rem;
     height: 4rem;
 }
 
@@ -1340,9 +1341,11 @@ body.dark-mode .mobile-menu-overlay {
 textarea {
     background-color: #FDCDFF;
 }
-body.dark-mode footer{
+
+body.dark-mode footer {
     background-color: #252525;
 }
+
 footer,
 footer * {
     cursor: url('../images/header/cursor2.png') 2 2, auto;
@@ -1356,6 +1359,11 @@ footer {
     height: 50rem;
     background-color: #252525;
     color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
 }
 
 footer .footerdummy {
