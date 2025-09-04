@@ -187,6 +187,7 @@ header {
 }
 
 h1 button {
+    width: 5rem;
     height: 5rem;
     border: none;
     background: none;
@@ -253,10 +254,12 @@ header nav button:hover {
     cursor: pointer;
     border-radius: 60%;
     text-align: center;
+    width: 9.5rem;
     height: 5rem;
 }
 
 .onoff img {
+    width: 100%;
     height: 100%;
 }
 
@@ -1351,7 +1354,7 @@ footer {
     text-align: center;
     width: 100%;
     height: 50rem;
-    background-color: black;
+    background-color: #252525;
     color: white;
 }
 
